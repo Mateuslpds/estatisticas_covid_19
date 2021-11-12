@@ -1,38 +1,131 @@
-.App {
+@font-face{
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica.ttf");
+}
+
+body{
   text-align: center;
+  font-family: "Helvetica";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.global{
+  padding: 15px;
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1, strong, .country{
+  color: #555;
+}
+
+p .cases{
+  color: #aaa;
+}
+
+p .deaths{
+  color: #696969;
+}
+
+p .revovered{
+  color: #8ACA2B;
+}
+
+.cases{
+  color: #aaa;
+}
+
+.deaths{
+  color: #696969;
+}
+
+.recovered{
+  color: #8ACA2B;
+}
+
+/* Celular  */
+
+@media screen and (max-width:420px){
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 25%;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 0 40%;
+    margin-right: 20px;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 25rem;
+    height: 19rem;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    padding: 2px 16px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Tablet  */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width:421px) and (max-width:1280px){
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 25%;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 0 25%;
+    margin-right: 20px;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 25rem;
+    height: 19rem;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+}
+
+/* Computador */
+
+@media screen and (min-width:1281px){
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 12px;
+    flex: 1 0 21%;
+    margin-right: 20px;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 25rem;
+    height: 10rem;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    padding: 2px 16px;
   }
 }
