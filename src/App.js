@@ -1,3 +1,4 @@
+// Importando arquivos de imagem
 import logo from './logo.svg';
 import argentina from './images/argentina.svg';
 import bolivia from './images/bolivia.svg';
@@ -11,6 +12,7 @@ import './App.css';
 import React from 'react';
 
 export default class App extends React.Component{
+  //Armazenando os dados
   state = {
     loading: true,
     global: null,
@@ -24,21 +26,25 @@ export default class App extends React.Component{
     country8: null,
   };
 
+  /* Tratando os dados da API no momento que o componente é carregado pela primeira vez */
   async componentDidMount(){
     const url = "https://api.covid19api.com/summary";
     const response = await fetch(url);
     const data = await response.json();
+    //Configurando e carregando os dados
     this.setState({country1: data.Countries[6], country2: data.Countries[20],
-    country3: data.Countries[23], country4: data.Countries[36],
-    country5: data.Countries[50], country6: data.Countries[134],
-    country7: data.Countries[135], country8: data.Countries[188],
-    global: data.Global, loading: false});
-    console.log(data);
+      country3: data.Countries[23], country4: data.Countries[36],
+      country5: data.Countries[50], country6: data.Countries[134],
+      country7: data.Countries[135], country8: data.Countries[188],
+      global: data.Global, loading: false});
   }
 
+  //Renderizando a página
   render(){
     return (
       <div>
+        {/* Testando os dados para ver se foram carregados.
+        Enquanto não forem aparecerá uma tela de carregamento */}
         {this.state.loading || !this.state.country1 ? (
           <div>Carregando, aguarde um momento.</div>
         ) : (
@@ -57,7 +63,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={argentina} alt="bandeira da argentina"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country1.Country}</div>
+                  <div class="country"><strong>País: </strong>Argentina</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country1.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country1.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country1.NewDeaths}</div>
@@ -70,7 +76,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={bolivia} alt="bandeira da bolivia"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country2.Country}</div>
+                  <div class="country"><strong>País: </strong>Bolívia</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country2.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country2.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country2.NewDeaths}</div>
@@ -83,7 +89,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={brasil} alt="bandeira do brasil"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country3.Country}</div>
+                  <div class="country"><strong>País: </strong>Brasil</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country3.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country3.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country3.NewDeaths}</div>
@@ -96,7 +102,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={colombia} alt="bandeira da colombia"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country4.Country}</div>
+                  <div class="country"><strong>País: </strong>Colômbia</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country4.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country4.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country4.NewDeaths}</div>
@@ -109,7 +115,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={equador} alt="bandeira do equador"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country5.Country}</div>
+                  <div class="country"><strong>País: </strong>Equador</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country5.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country5.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country5.NewDeaths}</div>
@@ -122,7 +128,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={paraguai} alt="bandeira do paraguai"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country6.Country}</div>
+                  <div class="country"><strong>País: </strong>Paraguai</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country6.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country6.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country6.NewDeaths}</div>
@@ -135,7 +141,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={peru} alt="bandeira do peru"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country7.Country}</div>
+                  <div class="country"><strong>País: </strong>Peru</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country7.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country7.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country7.NewDeaths}</div>
@@ -147,7 +153,7 @@ export default class App extends React.Component{
               <div class="card">
                 <img src={venezuela} alt="bandeira da venezuela"/>
                 <div class="container">
-                  <div class="country"><strong>País: </strong>{this.state.country8.Country}</div>
+                  <div class="country"><strong>País: </strong>Venezuela</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country8.NewConfirmed}</div>
                   <div class="cases"><strong>Total de casos: </strong>{this.state.country8.TotalConfirmed}</div>
                   <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country8.NewDeaths}</div>

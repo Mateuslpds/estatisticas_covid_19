@@ -29,17 +29,21 @@ h1, strong, .country{
   color: #8ACA2B;
 }
 
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
 /* Celular  */
 
 @media screen and (max-width:420px){
 
   h1{
     font-size: 40px;
-  }
-
-  .cards{
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .card {
@@ -61,18 +65,11 @@ h1, strong, .country{
     object-fit: cover;
   }
 
-  .container {
-    padding: 2px 16px;
-  }
 }
 
 /* Tablet  */
 
 @media screen and (min-width:421px) and (max-width:1024px){
-  .cards{
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -91,18 +88,11 @@ h1, strong, .country{
     object-fit: cover;
   }
 
-  .container {
-    padding: 2px 16px;
-  }
 }
 
 /* Computador */
 
 @media screen and (min-width:1025px){
-  .cards{
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -119,8 +109,5 @@ h1, strong, .country{
     max-width: 100%;
     object-fit: cover;
   }
-
-  .container {
-    padding: 2px 16px;
-  }
+  
 }
