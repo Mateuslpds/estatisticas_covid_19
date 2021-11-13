@@ -46,8 +46,8 @@ export default class App extends React.Component{
             <div class="global">              
               <h1>Estatísticas Globais sobre a Covid-19</h1>
               <div class="cases"><p><strong>Novos casos confirmados: </strong>{this.state.global.NewConfirmed}</p></div>
-              <div class="cases"><p><strong>Total de casos confirmados: </strong>{this.state.global.TotalConfirmed}</p></div>
-              <div class="deaths"><p><strong>Novas mortes: </strong>{this.state.global.NewDeaths}</p></div>
+              <div class="cases"><p><strong>Total de casos: </strong>{this.state.global.TotalConfirmed}</p></div>
+              <div class="deaths"><p><strong>Mortes recentes: </strong>{this.state.global.NewDeaths}</p></div>
               <div class="deaths"><p><strong>Total de mortes: </strong>{this.state.global.TotalDeaths}</p></div>
               <div class="recovered"><p><strong>Novos recuperados: </strong>{this.state.global.NewRecovered}</p></div>
               <div class="recovered"><p><strong>Total de recuperados: </strong>{this.state.global.TotalRecovered}</p></div>
@@ -59,8 +59,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country1.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country1.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country1.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country1.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country1.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country1.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country1.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country1.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country1.TotalRecovered}</div>
@@ -72,8 +72,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country2.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country2.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country2.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country2.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country2.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country2.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country2.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country2.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country2.TotalRecovered}</div>
@@ -85,8 +85,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country3.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country3.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country3.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country3.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country3.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country3.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country3.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country3.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country3.TotalRecovered}</div>
@@ -98,8 +98,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country4.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country4.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country4.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country4.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country4.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country4.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country4.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country4.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country4.TotalRecovered}</div>
@@ -111,8 +111,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country5.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country5.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country5.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country5.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country5.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country5.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country5.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country5.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country5.TotalRecovered}</div>
@@ -124,8 +124,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country6.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country6.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country6.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country6.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country6.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country6.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country6.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country6.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country6.TotalRecovered}</div>
@@ -137,8 +137,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country7.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country7.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country7.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country7.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country7.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country7.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country7.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country7.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country7.TotalRecovered}</div>
@@ -149,8 +149,8 @@ export default class App extends React.Component{
                 <div class="container">
                   <div class="country"><strong>País: </strong>{this.state.country8.Country}</div>
                   <div class="cases"><strong>Novos casos confirmados: </strong>{this.state.country8.NewConfirmed}</div>
-                  <div class="cases"><strong>Total de casos confirmados: </strong>{this.state.country8.TotalConfirmed}</div>
-                  <div class="deaths"><strong>Novas mortes: </strong>{this.state.country8.NewDeaths}</div>
+                  <div class="cases"><strong>Total de casos: </strong>{this.state.country8.TotalConfirmed}</div>
+                  <div class="deaths"><strong>Mortes recentes: </strong>{this.state.country8.NewDeaths}</div>
                   <div class="deaths"><strong>Total de mortes: </strong>{this.state.country8.TotalDeaths}</div>
                   <div class="recovered"><strong>Novos recuperados: </strong>{this.state.country8.NewRecovered}</div>
                   <div class="recovered"><strong>Total de recuperados: </strong>{this.state.country8.TotalRecovered}</div>
